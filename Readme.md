@@ -10,7 +10,7 @@ The objective of this project is to develop a machine learning model capable of 
 ### Data Collection
 The dataset used for training and evaluation consists of a diverse set of text samples, including both human-generated and AI-generated text. The original training dataset is quite uneven, following bar chart is evidence for that.
 
-![Data Distribution](1.png)
+![Data Distribution](Data_set_graph.png)
 
 I've imported an external train dataset `daigt-v2-train-dataset' using the pandas library, providing a good distribution of essays for the model training since it has a generated: student-written ratio of 45.6:54.4.
 
@@ -20,7 +20,7 @@ For natural language processing tasks, the given essays cannot be used directly;
 ### Feature Extraction
 Term Frequency-Inverse Document Frequency (TF-IDF) vectorization is a technique used for representing text data in a numerical format and capturing the significance of terms in the context of each document. Now since the test data is tokenized, it is ready for TF-IDF vectorization.
 
-![TF-IDF Vectorization](11.png)
+![TF-IDF Vectorization](tfdif.png)
 
 Tasks implemented for this include:
 - Creating a vectorizer object involving certain parameters like ngram_range, lowercase (for preserving the case of the text), token_pattern, etc.
@@ -41,7 +41,19 @@ The ensemble model is trained using the fit method with the TF-IDF transformed t
 
 ![Ensemble Models](ensemble_models.png)
 
-## Results
-My Kaggle submission has shown an accuracy of 93.6%. I enjoyed making this machine learning model.
+# Challenges Faced and Results
 
-![Kaggle Submission](111.png)
+My Kaggle submission has shown an accuracy of 93.6%. The `final_submission.csv` looks like this:
+
+![Submission Screenshot](submission.png)
+
+There were several challenges that I faced during making this machine learning model:
+
+- **Learning Curve:** I am a beginner in this field of machine learning and data science, and it took me some time to grasp some natural language processing concepts. Initially, I did not find it intuitive, but after several days of consistent efforts, things became clear.
+
+- **Skewed Dataset:** The dataset given on Kaggle had a biased distribution, making the training dataset inappropriate for model training. I explored several other datasets and found 'daigt-v2-train-dataset' that had an unbiased distribution of the essays.
+
+- **Model Training:** There were several model training methods like SVMs, KNN, logistic regression, and many more. Since I was using an ensembling model, there were several combinations I tried, which was a vigorous task, but ultimately the one I used came out to be fruitful.
+
+In conclusion, this project has been an exciting journey of discovery and innovation. As we move forward, let's carry the momentum of our achievements and continue to push the boundaries of knowledge in this field.
+
