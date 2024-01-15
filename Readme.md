@@ -55,5 +55,7 @@ There were several challenges that I faced during making this machine learning m
 
 - **Model Training:** There were several model training methods like SVMs, KNN, logistic regression, and many more. Since I was using an ensembling model, there were several combinations I tried, which was a vigorous task, but ultimately the one I used came out to be fruitful.
 
+Here is a display of my kaggle submission, along with the accuracy.
+![acc Screenshot](Accuracy.png)
 In conclusion, this project has been an exciting journey of discovery and innovation. As we move forward, let's carry the momentum of our achievements and continue to push the boundaries of knowledge in this field.
 
