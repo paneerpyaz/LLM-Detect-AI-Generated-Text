@@ -33,7 +33,7 @@ This part is implemented by training an ensemble model, i.e., multiple diverse m
 It is obvious that the given data requires binary classification. Finally, I have used the following for model training:
 
 - **Logistic Regression:** A process of modeling the probability of a discrete outcome given an input variable. The logistic regression model uses the sigmoid function (also known as the logistic function) to map the output to a value between 0 and 1.
-  \[ S(z) = \frac{1}{(1+e^{-z })} \]
+$$S(z) = \frac{1}{1+e^{-z}}$$
 
 - **Stochastic Gradient Descent Classifier (SGD):** SGD is an optimization algorithm used to minimize the cost or loss function during the training of a machine learning model. It is a variant of the gradient descent algorithm. It is suitable for both convex and non-convex optimization problems, and thus, I employed it in my ensemble model.
 
